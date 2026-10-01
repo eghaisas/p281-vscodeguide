@@ -21,6 +21,7 @@ extra_css:
 
 extra_javascript:
   - javascripts/sections.js
+  - javascripts/zoom.js         # ?zoom=1.25 in the URL scales the page
 
 plugins:
   - search
