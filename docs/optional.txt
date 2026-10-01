@@ -1,0 +1,13 @@
+## Teaching tips {.collapsed}
+
+Screencast mode
+:   Command Palette, then **Developer: Toggle Screencast Mode**. Displays each
+    key you press on screen, so students can follow your shortcuts.
+
+Zoom
+:   Scales the whole window for a projector. See
+    [Navigation and layout](#navigation-and-layout).
+
+Timeline
+:   At the bottom of the Explorer, lists saved versions of the current file.
+    Use it to recover an earlier version, even without Git.

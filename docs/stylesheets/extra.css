@@ -1,0 +1,53 @@
+/* Horizontal rule above every section (h2) */
+.md-typeset h2 {
+  border-top: 1px solid var(--md-default-fg-color--lighter);
+  padding-top: 1.2em;
+  margin-top: 2em;
+}
+
+/* Collapsible sections (see javascripts/sections.js) */
+.md-typeset .section-toggle {
+  cursor: pointer;
+  user-select: none;
+}
+.md-typeset .section-toggle::before {
+  content: "▸";
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.3em;
+  color: var(--md-default-fg-color--light);
+  transition: transform 0.15s;
+}
+.md-typeset .section-toggle[aria-expanded="true"]::before {
+  transform: rotate(90deg);
+}
+
+/* Vertical line down the side of every section (h2), and of any h3
+   subsection marked {.side-rule} */
+.md-typeset .section-body,
+.md-typeset div.side-rule {
+  border-left: 3px solid var(--md-accent-fg-color);
+  padding-left: 1em;
+}
+
+/* Key caps (++key++): soft glow for contrast against the page, and a top
+   highlight for depth. The first two shadows are the theme's own. */
+[data-md-color-scheme="default"] {
+  --kbd-glow: rgba(0, 0, 0, 0.18);
+  --kbd-highlight: rgba(255, 255, 255, 0.9);
+}
+[data-md-color-scheme="slate"] {
+  /* same accent color as the side lines */
+  --kbd-glow: color-mix(in srgb, var(--md-accent-fg-color) 25%, transparent);
+  --kbd-highlight: rgba(255, 255, 255, 0.15);
+}
+[data-md-color-scheme="slate"] .md-typeset kbd {
+  background-color: var(--md-typeset-kbd-color);  /* lighter than the page */
+}
+.md-typeset kbd {
+  box-shadow:
+    0 0 0 0.05rem var(--md-typeset-kbd-border-color),
+    0 0.15rem 0 var(--md-typeset-kbd-border-color),
+    0 0 0.4rem 0.05rem var(--kbd-glow),
+    inset 0 0.05rem 0 var(--kbd-highlight);
+}

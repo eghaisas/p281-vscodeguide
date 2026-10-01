@@ -1,0 +1,7 @@
+# Build output and caches (GitHub Actions rebuilds the site)
+site/
+.cache/
+*.zip
+# Editor and OS files
+.vscode/
+.DS_Store
