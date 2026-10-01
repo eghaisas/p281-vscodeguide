@@ -393,7 +393,7 @@ Put the following in `course281/.vscode/settings.json`. Paste only the code if o
   "files.autoSave": "onFocusChange",
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
-  "editor.rulers": [88],
+  "editor.rulers": [100],
   "editor.mouseWheelZoom": true,
   "editor.minimap.enabled": false,
   "editor.stickyScroll.enabled": true,
@@ -414,7 +414,7 @@ Put the following in `course281/.vscode/settings.json`. Paste only the code if o
 | `files.autoSave` | Autosaves when focus moves elsewhere, so you never run a stale file |
 | `files.trimTrailingWhitespace` | Removes trailing spaces on save |
 | `files.insertFinalNewline` | Ends every file with a newline |
-| `editor.rulers` | Draws a line-length guide at column 88 |
+| `editor.rulers` | Draws a line-length guide at column 100 |
 | `editor.mouseWheelZoom` | ++ctrl++ + scroll (++cmd++ + scroll on macOS) resizes editor text |
 | `editor.minimap.enabled` | Hides the code overview on the right edge |
 | `editor.stickyScroll.enabled` | Pins the current function or class header while scrolling |
